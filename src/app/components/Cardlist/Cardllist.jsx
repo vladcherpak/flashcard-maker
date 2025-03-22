@@ -34,12 +34,13 @@ const CardList = () => {
         <div
           onClick={() => toggleReturnCard(card.id)}
           key={card.id}
-          className="bg-white shadow-md rounded-lg p-2 text-center"
+          className={`"bg-white shadow-md transition-transform duration-600 cursor-pointer rounded-lg p-2 text-center ${card.flipped ? "rotate-y-360" : ""} "`}
+          
         >
-          <p className="text-sm font-medium text-gray-700">{card.flipped ? card.back : card.front}</p>
+          <p className="text-sm font-medium   text-gray-700 rotate-y-360">{card.flipped ? card.back  : card.front }</p>
           <button 
            onClick={(e) => {e.stopPropagation(); handleDeleteCard(card.id);}}
-            className="mt-15 w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+            className="mt-15 w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700  "
           >
             Видалити
           </button>
