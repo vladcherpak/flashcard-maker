@@ -42,7 +42,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-100 to-white p-6">
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto  ">
         <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">Створення карток</h1>
         <div className="bg-white shadow-lg rounded-lg p-6 mb-6">
           <div className="space-y-4">
@@ -60,7 +60,7 @@ const Home = () => {
             />
             <button
               onClick={handleAddCard}
-              className="w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
+              className="   cursor-pointer w-full bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 transition-colors duration-300"
             >
               Додати картку
             </button>
